@@ -10,22 +10,45 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
   color: #fff;
   position: relative;
-  background: transparent;
 }
 
-body::before {
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+
+/*body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/testfortnite.jpg") top right no-repeat;
+  background: #040404 url("../The Witcher Ties of Destiny Teaser.mp4") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+}*/
+
+#header video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
 }
 
 @media (min-width: 1024px) {
@@ -944,6 +967,12 @@ section .container {
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info h1 {
+  font-size: 70px;
+  font-weight: 200;
   margin-bottom: 20px;
 }
 
