@@ -10,8 +10,22 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #040404;
   color: #fff;
   position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("../img/testfortnite.jpg") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
 }
 
 #bgVideo {
@@ -448,7 +462,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: #d21818;
   border-radius: 50px;
 }
 
@@ -936,6 +950,18 @@ section .container {
   padding-bottom: 10px;
 }
 
+.portfolio-details .container .port-links a{
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio-details .container .port-links a:hover{
+  color: #18d26e;
+}
+
 .portfolio-details .portfolio-title {
   font-size: 35px;
   font-weight: 700;
@@ -971,8 +997,8 @@ section .container {
 }
 
 .portfolio-details .portfolio-info h1 {
-  font-size: 70px;
-  font-weight: 200;
+  font-size: 35px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -1021,7 +1047,7 @@ section .container {
 }
 
 .credits a {
-  color: #18d26e;
+  color: #ffe600;
   transition: 0.3s;
 }
 
