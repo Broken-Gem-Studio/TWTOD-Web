@@ -483,6 +483,13 @@ mark,
   overflow:hidden;
 }
 
+.img-width {
+  height:263px;
+  width:380px;
+  line-height: 100px;
+  overflow:hidden;
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
