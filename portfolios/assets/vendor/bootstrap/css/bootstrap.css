@@ -484,20 +484,18 @@ mark,
 }
 
 .img-width {
-  height:263px;
-  width:380px;
-  line-height: 100px;
-  overflow:hidden;
+  display: block;
+  margin: auto;
+  max-width: auto;
+  max-height: 263px;
 }
 
 
 .img-thumbnail {
-  padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto;
+  display: block;
+  margin: auto;
+  max-width: 380px;
+  height: 263px;
 }
 
 .figure {
