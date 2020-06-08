@@ -473,7 +473,16 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  width: auto; 
 }
+
+.img-box {
+  height:263px;
+  width:auto;
+  line-height: 100px;
+  overflow:hidden;
+}
+
 
 .img-thumbnail {
   padding: 0.25rem;
