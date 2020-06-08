@@ -991,19 +991,19 @@ section .container {
   font-weight: 400;
 }
 
-.portfolio-details  li {
+.portfolio-details .container li {
   font-size: 16px;
   font-weight: 400;
   text-align: justify;
   text-justify: inter-ideograph;
   margin-bottom: 10px;
-  list-style-position: outside;
 }
 
-.portfolio-details ul{
-  list-style: none;
+.portfolio-details .container ul{
+  list-style: disc;
   padding: 0;
   font-size: 15px;
+  list-style-position: outside;
 }
 
 .portfolio-details ul li + li {
@@ -1023,6 +1023,96 @@ section .container {
     padding-top: 20px;
   }
 }
+
+/* Images of the portfolio */
+
+.menu-box-portfolio{
+	padding: 70px 0px;
+}
+
+.heading-title-portfolio{
+	margin-bottom: 50px;
+}
+.heading-title-portfolio h2{
+	color: #ffffff;
+	font-size: 28px;
+	font-family: "Open Sans", sans-serif;
+}
+.heading-title-portfolio p{
+	font-size: 18px;
+	font-weight: 200;
+	margin: 0px;
+}
+
+.filter-button-group {
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    margin: 10px 15px;
+    display: inline-block;
+}
+
+.filter-button-group button {
+    color: #333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+}
+
+.filter-button-group button.active {
+    background: #83622680;
+    color: #fff;
+    box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);
+}
+
+.gallery-single{
+	margin: 30px 0px;
+}
+
+.gallery-single {
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.why-text-portfolio {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    height: 100%;
+    background: rgba(178, 182, 194, 0.301);
+    padding: 12px 12px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.why-text-portfolio h5{
+  top: 50%;
+  text-align: center;
+	font-size: 28px;
+	font-weight: 600;
+	color: white;
+}
+
+.why-text-portfolio p{
+  text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.gallery-single:hover .why-text-portfolio{
+	bottom: 0px;
+}
+
+/* End Images Part */
 
 /*--------------------------------------------------------------
 # Credits
