@@ -546,7 +546,7 @@ section .container {
 /* Xavi Addition */
 
 .menu-box{
-	padding: 10px 0px;
+	padding: 70px 0px;
 }
 
 .heading-title{
@@ -1103,18 +1103,20 @@ section .container {
 
 .gallery-single .why-text-portfolio {
   position: absolute;
+  overflow: hidden;
   left: 0;
   bottom: 100%;
   right: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.37);
+  background: rgba(178, 182, 194, 0.301);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 } 
 
 .gallery-single .img-thumbnail {
 position: absolute;
 height: 263px;
 } 
-
 
 .why-text-portfolio h5{
   position: absolute;
@@ -1124,7 +1126,7 @@ height: 263px;
   text-align: center;
 	font-size: 28px;
 	font-weight: 600;
-	color: rgb(209, 209, 209);
+	color: white;
 }
 
 .why-text-portfolio h5:hover{
@@ -1132,7 +1134,7 @@ height: 263px;
   text-align: center;
 	font-size: 28px;
 	font-weight: 600;
-	color: rgb(255, 255, 255);
+	color: rgb(247, 10, 10);
 }
 
 .why-text-portfolio p{
@@ -1184,3 +1186,56 @@ height: 263px;
   color: #18d26e;
 }
 
+a{text-decoration:none;}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.textOverImage{background-size:cover!important;}
+}
+
+.textOverImage{
+  position:relative;
+  cursor: pointer;
+  width: 100%;
+  height: 263px;
+  float:left;
+  background-size:auto 100%;
+  background-position:center;
+  transition:0.3s;
+}
+
+.textOverImage:hover{
+  background-size:auto 110%;
+}
+
+.textOverImage:after{
+  position:absolute;
+  top:100%;
+  bottom:0;
+  left:0;
+  right:0;
+  white-space:pre-wrap;
+  overflow:hidden;
+  background-color:rgba(0,0,0,0.6);
+  color:#fff;
+  padding:0 8px;
+  opacity:0;
+  content:attr(data-text);
+  transition:0.3s;
+}
+
+.textOverImage:hover:after{
+  opacity:1;
+  top:0;
+  padding:8px;
+}
+
+.textOverImage:first-line{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+	font-size: 28px;
+	font-weight: 600;
+	color: white;
+}
