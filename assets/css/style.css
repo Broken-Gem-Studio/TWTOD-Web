@@ -996,12 +996,14 @@ section .container {
 }
 
 .portfolio-details h4 {
+  color: #18d26e; 
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
 .portfolio-details .container h1 {
+  color: #18d26e; 
   display: inline-block;
   margin-bottom: 10px;
   padding-bottom: 1px;
