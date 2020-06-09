@@ -550,12 +550,13 @@ section .container {
 }
 
 .heading-title{
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 .heading-title h2{
 	color: #ffffff;
-	font-size: 28px;
-	font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+	font-family: "Poppins", sans-serif;
 }
 .heading-title p{
 	font-size: 18px;
@@ -609,7 +610,7 @@ section .container {
     background: rgba(53, 155, 13, 0.603);
     padding: 12px 12px;
     -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    transition: all .6s ease;
 }
 /*
 .why-text h4{
@@ -1092,23 +1093,28 @@ section .container {
 }
 
 .gallery-single {
-    position: relative;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  width: 100%;
+  height: 263px;
 }
 
-.why-text-portfolio {
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    right: 0;
-    height: 100%;
-    background: rgba(178, 182, 194, 0.301);
-    padding: 12px 12px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
+.gallery-single .why-text-portfolio {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  right: 0;
+  height: 100%;
+  background: rgba(178, 182, 194, 0.301);
+} 
+
+.gallery-single .img-thumbnail {
+position: absolute;
+height: 263px;
+} 
+
 
 .why-text-portfolio h5{
   position: absolute;
