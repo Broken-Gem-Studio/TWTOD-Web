@@ -546,7 +546,7 @@ section .container {
 /* Xavi Addition */
 
 .menu-box{
-	padding: 70px 0px;
+	padding: 0px 0px;
 }
 
 .heading-title{
@@ -607,7 +607,7 @@ section .container {
     bottom: -100%;
     right: 0;
     height: 100%;
-    background: rgba(53, 155, 13, 0.603);
+    background: rgba(178, 182, 194, 0.3);
     padding: 12px 12px;
     -webkit-transition: all .3s ease;
     transition: all .6s ease;
@@ -750,7 +750,7 @@ section .container {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #F2771A;
+  background: #18d26e;
 }
 
 .portfolio #portfolio-flters li:last-child {
