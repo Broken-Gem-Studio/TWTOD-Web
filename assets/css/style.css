@@ -482,6 +482,87 @@ section .container {
   transition: all ease-in-out 0.3s;
 }
 
+/* SLIDER */
+
+.container-slider{
+  width: 800px;
+  height:500px;
+  position:relative;
+  margin: auto;
+}
+
+slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+ }
+ 
+ slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+ }
+ 
+ slide:nth-child(1){
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url(../img/portfolio/portfolio-1.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url(../img/portfolio/portfolio-2.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url(../img/portfolio/portfolio-3.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide:nth-child(4){
+  left: 0%;
+  animation-delay: 8s;
+  background-image: url(../img/portfolio/portfolio-4.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ 
+ slide p {
+  font-family: Comfortaa;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  top: 50%;
+  width: 100%;
+  margin-top: 200px;
+  color: #fff;
+ }
+ 
+ @keyframes slide {
+  0% { left: 100%; width: 100%; }
+  5% { left: 0%; }
+  25% { left: 0%; }
+  30% { left: -100%; width: 100%; }
+  30.0001% { left: -100%; width: 0%; }
+  100% { left: 100%; width: 0%; }
+ }
+
+
+/* END SLIDER */
+
 /* Watch Trailer Button */
 
 .middle{
@@ -1188,13 +1269,10 @@ height: 263px;
   color: #18d26e;
 }
 
-a{text-decoration:none;}
-/*Add the following compatibility code for IE as you can't animate background-size in IE*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
-	.textOverImage{background-size:cover!important;}
-}
 
-.textOverImage{
+/* Portfolio Images */
+
+.container-portfolio {
   position:relative;
   cursor: pointer;
   width: 100%;
@@ -1205,11 +1283,7 @@ a{text-decoration:none;}
   transition:0.3s;
 }
 
-.textOverImage:hover{
-  background-size:auto 110%;
-}
-
-.textOverImage:after{
+.overlay-portfolio {
   position:absolute;
   top:100%;
   bottom:0;
@@ -1221,23 +1295,24 @@ a{text-decoration:none;}
   color:#fff;
   padding:0 8px;
   opacity:0;
-  content:attr(data-text);
   transition:0.3s;
 }
 
-.textOverImage:hover:after{
+.container-portfolio:hover .overlay-portfolio {
   opacity:1;
   top:0;
   padding:8px;
 }
 
-.textOverImage:first-line{
+.text-portfolio {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-	font-size: 28px;
-	font-weight: 600;
-	color: white;
 }
