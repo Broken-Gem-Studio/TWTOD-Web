@@ -485,6 +485,7 @@ section .container {
 /* SLIDER */
 
 .container-slider{
+  padding-top: 25px;
   width: 800px;
   height:500px;
   position:relative;
@@ -566,12 +567,14 @@ slider {
 /* Watch Trailer Button */
 
 .middle{
+  padding-top: 10px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .btn{
+  
   position: relative;
   display: block;
   color: white;
@@ -643,6 +646,15 @@ slider {
 	font-size: 18px;
 	font-weight: 200;
 	margin: 0px;
+}
+
+.container h3{
+  text-align: center;
+}
+
+.container h1{
+  font-size: 36px;
+  text-align: center;
 }
 
 .filter-button-group {
@@ -1309,7 +1321,7 @@ height: 263px;
   font-size: 28px;
   font-weight: 600;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
