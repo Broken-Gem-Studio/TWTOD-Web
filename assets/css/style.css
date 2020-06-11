@@ -599,7 +599,7 @@ slider {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   margin: 30px 0;
-  border: 2px solid #ff7675;
+  border: 2px solid #139650;
   padding: 14px 60px;
   text-transform: uppercase;
   overflow:hidden;
@@ -607,7 +607,7 @@ slider {
 }
 
 .btn::before{
-  background: #ff7675;
+  background: #18d26e;
   content: "";
   position: absolute;
   top: 50%;
@@ -686,11 +686,11 @@ slider {
 	margin: 0px;
 }
 
-.container h3{
+#services .container h3{
   text-align: center;
 }
 
-.container h1{
+#services .container h1{
   font-size: 37.5px;
 }
 
