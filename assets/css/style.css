@@ -419,7 +419,7 @@ section .container {
   margin-bottom: 30px;
 }
 
-.portfolio-engine #portfolio-flters {
+.portfolio-engine #portfolio-engine-filters {
   padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
@@ -428,7 +428,7 @@ section .container {
   padding: 2px 15px;
 }
 
-.portfolio-engine #portfolio-flters li {
+.portfolio-engine #portfolio-engine-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -443,11 +443,11 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio-engine #portfolio-flters li:hover, .portfolio-engine #portfolio-flters li.filter-active {
+.portfolio-engine #portfolio-engine-filters li:hover, .portfolio-engine #portfolio-engine-filters li.filter-active {
   background: #18d26e;
 }
 
-.portfolio-engine #portfolio-flters li:last-child {
+.portfolio-engine #portfolio-engine-filters li:last-child {
   margin-right: 0;
 }
 
@@ -535,7 +535,7 @@ section .container {
 .portfolio-engine .right-links-engine{
   float: right;
   padding-right: 50px;
-  margin-bottom: -10px;
+  margin-bottom: -10px;box-sizing: border-box;
 }
 
 .portfolio-engine .container img{
@@ -989,7 +989,7 @@ slider {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.portfolio #portfolio-filters {
   padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
@@ -998,7 +998,7 @@ slider {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -1013,11 +1013,11 @@ slider {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-filters li:hover, .portfolio #portfolio-filters li.flter-active {
   background: #18d26e;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-filters li:last-child {
   margin-right: 0;
 }
 

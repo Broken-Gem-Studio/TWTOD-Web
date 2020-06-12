@@ -132,8 +132,26 @@
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#portfolio-filters li').on('click', function() {
+      $("#portfolio-filters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+    });
+
+  });
+
+   // Engine isotope and filter
+   $(window).on('load', function() {
+    var portfolioIsotope = $('.portfolio-engine-container').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-engine-filters li').on('click', function() {
+      $("#portfolio-engine-filters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
       portfolioIsotope.isotope({
