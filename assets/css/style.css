@@ -438,7 +438,7 @@ section .container {
   text-transform: uppercase;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-  margin: 0 3px 10px 3px;
+  margin: 10px 3px 10px 3px;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
@@ -509,7 +509,42 @@ section .container {
   border: 2px solid #18d26e;
 }
 
+.portfolio-engine h1{
+  margin: 0;
+  margin: 0px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  display: inline-block; 
+}
 
+.portfolio-engine h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 10px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio-engine .right-links-engine{
+  float: right;
+  padding-right: 50px;
+  margin-bottom: -10px;
+}
+
+.portfolio-engine .container img{
+  float: right;
+}
+
+.portfolio-engine .container img:hover{
+  opacity: 0.7;
+}
 /*--------------------------------------------------------------
 # Resume / POSTMORTEM
 --------------------------------------------------------------*/
@@ -1153,12 +1188,12 @@ slider {
   background: rgb(214, 214, 214);
 }
 
-.portfolio-details .container .right_links {
+ .container .right_links {
   float: right;
   display: inline-block;
 }
 
-.portfolio-details .container .right_links a{
+ .container .right_links a{
   text-align: right;
   color: #fff;
   margin: 0 2px;
@@ -1468,3 +1503,4 @@ height: 263px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
