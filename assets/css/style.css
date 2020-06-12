@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  /*background: #040404 url("../img/WallpaperWeb.png") top right no-repeat;*/
+  background: #040404 url("../img/bg_portfolio.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.61);
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -367,7 +367,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.61);
   padding: 30px;
 }
 
