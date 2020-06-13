@@ -609,6 +609,56 @@ section .container {
 /*--------------------------------------------------------------
 # Services / GAME
 --------------------------------------------------------------*/
+
+/* Game Description */
+
+.services .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #18d26e;
+}
+
+.services .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services .content ul li {
+  padding-bottom: 10px;
+}
+
+.services .content ul i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: #18d26e;
+}
+
+.services .content p:last-child {
+  margin-bottom: 0;
+}
+
+.services .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.services .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.services .portfolio-details-carousel .owl-dot.active {
+  background-color: #18d26e !important;
+}
+
+
+
+/* End */
+
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
@@ -851,7 +901,7 @@ slider {
 .filter-button-group button.active {
     background: #83622680;
     color: #fff;
-    box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);
+    box-shadow: 2px 20px 45px 5px rgba(40, 104, 20, 0.2);
 }
 
 .gallery-single{
@@ -862,7 +912,7 @@ slider {
     position: relative;
     overflow: hidden;
     -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px rgb(204, 204, 204);
 }
 
 .why-text {
