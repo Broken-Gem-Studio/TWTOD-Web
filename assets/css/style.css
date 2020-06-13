@@ -1212,8 +1212,13 @@ slider {
   overflow-y: auto;
 }
 
-.portfolio-details .container {
+.portfolio-details .text-wrap-left{
+  float: left; 
+  margin-right: 35px;
+  margin-top: 10px;  
+}
 
+.portfolio-details .container {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1247,7 +1252,7 @@ slider {
   text-align: right;
   color: #fff;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 32px;
   transition: 0.3s;
 }
 
@@ -1314,6 +1319,7 @@ slider {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 10px;
+  display:inline-block;
 }
 
 .portfolio-details .container h1 {
@@ -1323,6 +1329,13 @@ slider {
   padding-bottom: 1px;
   font-size: 35px;
   font-weight: 400;
+}
+
+.portfolio-details .container ol {
+  list-style: disc;
+  padding: 0;
+  font-size: 15px;
+  list-style-position: outside;
 }
 
 .portfolio-details .container li {
@@ -1338,6 +1351,10 @@ slider {
   padding: 0;
   font-size: 15px;
   list-style-position: outside;
+}
+
+.portfolio-details ol ul + ul {
+  margin-top: 10px; 
 }
 
 .portfolio-details ul li + li {
