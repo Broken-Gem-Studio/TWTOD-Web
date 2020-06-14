@@ -763,18 +763,19 @@ slider {
 
 .middle{
   padding-top: 20px;
-  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .middle .middle-teaser{
   padding-right: 10px;
+  width: 80px;
   display: inline-block;
 }
 
 .middle .middle-trailer{
   padding-left: 10px;
+  width: 80px;
   display: inline-block;
 }
 
@@ -904,7 +905,7 @@ slider {
 .filter-button-group button.active {
     background: #83622680;
     color: #fff;
-    box-shadow: 2px 20px 45px 5px rgba(40, 104, 20, 0.2);
+    box-shadow: 2px 20px 45px 5px rgba(42, 146, 10, 0.2);
 }
 
 .gallery-single{
@@ -924,7 +925,7 @@ slider {
     bottom: -100%;
     right: 0;
     height: 100%;
-    background: rgba(178, 182, 194, 0.3);
+    background: #18d26f21;
     padding: 12px 12px;
     -webkit-transition: all .3s ease;
     transition: all .6s ease;
