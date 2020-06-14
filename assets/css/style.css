@@ -757,25 +757,24 @@ slider {
 
 /* Links */
 
-.links{
-  margin-top: 30px;
-}
-
-.middle{
+.container .links{
   padding-top: 20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative; 
 }
 
-.middle .middle-teaser{
+.middle 
+{
+  padding-top: -20px; 
+  text-align: center;
+}
+
+.middle-teaser{
   padding-right: 10px;
-  width: 80px;
   display: inline-block;
 }
 
-.middle .middle-trailer{
+.middle-trailer{
   padding-left: 10px;
-  width: 80px;
   display: inline-block;
 }
 
