@@ -535,7 +535,8 @@ section .container {
 .portfolio-engine .right-links-engine{
   float: right;
   padding-right: 50px;
-  margin-bottom: -10px;box-sizing: border-box;
+  margin-bottom: -10px;
+  box-sizing: border-box;
 }
 
 .portfolio-engine .container img{
@@ -1094,6 +1095,25 @@ section .container {
   padding-right: 50px;
   margin-bottom: -10px;
   box-sizing: border-box;
+}
+
+.portfolio .container img{
+  float: right;
+}
+
+.portfolio .container img:hover{
+  opacity: 0.7;
+}
+
+.portfolio-engine h1{
+  margin: 0;
+  margin: 0px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  display: inline-block; 
 }
 
 .portfolio #portfolio-filters {
