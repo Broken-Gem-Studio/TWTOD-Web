@@ -49,27 +49,90 @@
         <h2><img src="assets/img/PortfolioImages/didac.png" class="text-wrap-left" width="28%" height="auto"></h2>
 
         <p>
-          I’m Lucho Suaya, Technical Lead of a team of 12 people developing Broken Engine and The Witcher Ties of Destiny. Aside of coordinating and managing the programming team, I could also develop my passion for graphics programming, being involved in all kind of areas related to this, such as particles system, the rendering pipeline (including materials & lighting system), shadows, transparencies and blending, post-production effects…
+          I’m Dídac Romero, coder and lead of the small audio team. Games and audio are probably
+          my biggest passions, and in this project I was able to contribute to both. For the most part of
+          the project I have been one of the coders of Broken Engine and at the latest stages of the
+          project I got to lead the small audio team, whilst also developing some gameplay code for
+          The Witcher: Ties of Destiny.
         </p>
           <p>
-            As Technical Lead, I had to coordinate all the team members, distributing, verifying and reviewing their tasks, ensuring quality, functionality and stability, as well as to aid with anything related to code to anyone in the project, while constantly talking and coordinating with other teams and their leads and the producer, contributing to decision making and to the project’s development. Also, I’ve participated actively in Quality Assurance and Marketing teams.
-
-            In a more internal layer, I had to ensure code quality and consistency through the branch policy and the pull requests reviewing before merging to main development branch of code.       
-
-            And finally but more important, in a human level I had to keep the team’s mood and ensure that everyone was doing well with their tasks and with the project personally, specially animically and now, with the COVID-19 situation which made distances farther and contact more difficult.     
+            My role in the code team has been to develop the scripting system of the engine, based on
+            Lua. It’s important to note that in a previous subject we would develop a game engine in
+            pairs or individually. This game engine had just the basics to start implementing the different
+            subsystems an engine would have, and we would implement 1 subsystem. My colleague
+            Carles Homs and I chose the scripting system, and we chose to use Lua because we liked
+            the idea of messing around an interpreted language that was different to what we were
+            accustomed to code with.
+          </p>
+          <p>
+            As the scripting system coder I began my journey on improving the rudimentary scripting
+            system in order to make life easier to everyone who would be using it on Broken Engine.   
+          </p>
+          <p>
+            A new approach: As a student, I’m always trying to think every bit of what I’m going to code
+            and develop it from scratch. This skill was very helpful when I wouldn’t find much
+            documentation on how to build a scripting system in Lua, but from now on everything was
+            different, I had to be fast to give quality of life improvements to my colleagues coding in Lua.
+          </p>
+          <p>
+            My new approach has been to try to integrate or use external tools that would have taken a
+            lot of time to develop. This way the team had quality tools and improvements that reduced
+            the time needed to develop scripts.
           </p>
           <h4><strong>PROJECT CONTRIBUTION</strong></h4>
-          <p>
-            My role allowed me to know all implemented systems, so I’ve worked in different areas of the engine, from details to whole systems, being the most ones:
-          </p>
-
           <ul>
-            <li><strong>Scripting System:</strong> Constantly improving and adding scripting functions in several systems (rendering, materials, particles, UI...) according to the needs of the gameplay programmers.</li>
-            <li><strong>Particles System:</strong> Improving and adding features to the particles system (different billboarding types, particles rendering additions and polishes, custom meshes…).</li>
-            <li><strong>Engine Graphics Programmer</strong> (Rendering System & Pipeline - worked close aside Sergi & Aitor)</li>
-            <li><strong>Lighting, Shaders & Material System:</strong> Should be extended (gamma correction, normals, rim…)</li>
-            <li><strong>Transparencies & Blending</strong> (both for Particles and Materials)</li>
-            <li><strong>Engine Post Production Effects</strong></li>
+            <li><strong>Scripting System & Improvements:</strong> I developed the whole scripting system of Broken
+              Engine, from the management of the pipeline during execution to the hot reloading
+              capabilities and the basic functionalities for the display and edition of variables from the
+              inspector</li>
+            <li><strong>Script Debugging:</strong> Browsing through many libraries and solutions for this issue I choose to
+              implement some code to support the usage of the Zero Brane Studio IDE, which is a Lua
+              centered IDE with all capabilities necessary to debug any script. We basically attach the Lua
+              virtual machine to the IDE that can then use all its prepared code to properly manage
+              debugging.</li>
+            <li><strong>Autocomplete:</strong> Since everyone used Visual Studio Code to code scripts for the game, I
+              developed a small autocomplete functionality that uses the KeyRing plugin from the VSCode
+              marketplace (a tool made by the modding community of Warcraft) to display the functions
+              that can be called to alter the state of the game. Unfortunately the system required to be
+              manually updated, and I would love to improve in this area by using some sort of code
+              reflection library in the future as a personal project.</li>
+            <li><strong>Callbacks: </strong> The engine had to support many callback functionalities for all kind of
+              subsystems such as UI, or more complex callbacks such as physics events like collisions
+              and triggers. I developed a simple way to make callbacks from any system and helped the
+              different subsystem programmers to implement the functionality in their pipeline in a safe
+              and effective way.</li>
+            <li><strong>Script to script communication: </strong> Using the Lua bridge wrapper I found a way to pass
+              complete scripts as reference to other scripts that requested them, giving them full access to
+              the public members and functions, which were updated at all times since it was a direct
+              reference.
+              </li>
+            <li><strong>Lua to C++ “translator”:</strong> I developed an utility that allows the engine to use custom types
+              such as vector 3 or quaternions previously defined in a Lua document, and properly parse
+              and change or use its data. This was notoriously good to avoid code repetition and make
+              sure you could define functions to dump engine information into newly created lua tables and
+              vice versa, allowing the engine programmers to create functions to fully customize what they
+              wanted to do with those data structures. Furthermore, this system allowed the creation of
+              local memory in lua that could be referenced later in other scripts, whilst allowing the
+              gameplay programers the possibility to access these vectors or quaternions by typing for
+              instance vector.x instead of vector[1].</li>
+            <li><strong>Gamepads Support:</strong> At the beginning of the project I implemented the gamepad support for
+              gamepads and all its related scripting functionalities so that the gameplay programmers can
+              use all of the capabilities implemented in the engine related to gamepads.</li>
+            <li><strong>Audio System Collaboration:</strong> Although Jacobo has been our audio programmer, I helped
+              him in the implementation of Wwise RTPC’s or loading multiple soundbank files and
+              designing a system to use the fastest way to communicate with wwise (UID’s) while using
+              readable references to those UID’s by using strings, which were defined in various json files
+              you can generate from Wwise.</li>
+            <li><strong>Audio Team coordination:</strong> Towards the last month and a half of development the leads
+              and the producer created a small audio team (3-4 people) and I got the charge of leading the
+              team. The team was created to implement and redesign some of the audio aspects of the
+              game in order to fix the lack of audio the whole project had been suffering.</li>
+            <li><strong>Selection and implementation of Music:</strong> Since I really like music in games I got the
+              charge to choose royalty free music that would fit the game’s theme, ambience and
+              ambitions in terms of audio design. I also implemented the system of interactive music that
+              plays throughout both levels and the voiceline system for characters and enemies simple
+              lore, although some stuff on the enemies had to be rolled back in order to polish in a better
+              way the most important aspects of the game’s audio.</li>
           </ul>
 
           <div class="menu-box-portfolio">
@@ -78,10 +141,10 @@
 
                 <div class="col-lg-4 col-md-6 special-grid drinks">
                   <div class="gallery-single fix">
-                    <div class="venobox" href="assets/img/RogerLeon/Geralt.gif" data-gall="portfolioGallery">
-                      <div class="container-portfolio" style="background-image: url(assets/img/RogerLeon/Geralt.gif)">
+                    <div class="venobox" href="assets/img/didacromero/Scripting_System.gif" data-gall="portfolioGallery">
+                      <div class="container-portfolio" style="background-image: url(assets/img/didacromero/Scripting_System.gif)">
                         <div class="overlay-portfolio">
-                          <div class="text-portfolio">Geralt</div>
+                          <div class="text-portfolio">Scripting System</div>
                         </div>
                       </div>
                     </div>
@@ -90,10 +153,10 @@
                    
                 <div class="col-lg-4 col-md-6 special-grid drinks">
                   <div class="gallery-single fix">
-                    <div class="venobox" href="assets/img/RogerLeon/Geralt.gif" data-gall="portfolioGallery">
-                      <div class="container-portfolio" style="background-image: url(assets/img/RogerLeon/Geralt.gif)">
+                    <div class="venobox" href="assets/img/didacromero/Hot_Reloading.gif" data-gall="portfolioGallery">
+                      <div class="container-portfolio" style="background-image: url(assets/img/didacromero/Hot_Reloading.gif)">
                         <div class="overlay-portfolio">
-                          <div class="text-portfolio">Geralt</div>
+                          <div class="text-portfolio">Hot Reloading</div>
                         </div>
                       </div>
                     </div>
@@ -102,10 +165,10 @@
 
                 <div class="col-lg-4 col-md-6 special-grid drinks">
                   <div class="gallery-single fix">
-                    <div class="venobox" href="assets/img/RogerLeon/Geralt.gif" data-gall="portfolioGallery">
-                      <div class="container-portfolio" style="background-image: url(assets/img/RogerLeon/Geralt.gif)">
+                    <div class="venobox" href="assets/img/didacromero/Debugging_Showcase_Twitter.gif" data-gall="portfolioGallery">
+                      <div class="container-portfolio" style="background-image: url(assets/img/didacromero/Debugging_Showcase_Twitter.gif)">
                         <div class="overlay-portfolio">
-                          <div class="text-portfolio">Geralt</div>
+                          <div class="text-portfolio">Debugging Showcase</div>
                         </div>
                       </div>
                     </div>
@@ -114,10 +177,10 @@
 
                 <div class="col-lg-4 col-md-6 special-grid drinks">
                   <div class="gallery-single fix">
-                    <div class="venobox" href="assets/img/RogerLeon/Geralt.gif" data-gall="portfolioGallery">
-                      <div class="container-portfolio" style="background-image: url(assets/img/RogerLeon/Geralt.gif)">
+                    <div class="venobox" href="assets/img/didacromero/Autocomplete.gif" data-gall="portfolioGallery">
+                      <div class="container-portfolio" style="background-image: url(assets/img/didacromero/Autocomplete.gif)">
                         <div class="overlay-portfolio">
-                          <div class="text-portfolio">Geralt</div>
+                          <div class="text-portfolio">Autocomplete</div>
                         </div>
                       </div>
                     </div>
@@ -126,10 +189,10 @@
 
                 <div class="col-lg-4 col-md-6 special-grid drinks">
                   <div class="gallery-single fix">
-                    <div class="venobox" href="assets/img/RogerLeon/Geralt.gif" data-gall="portfolioGallery">
-                      <div class="container-portfolio" style="background-image: url(assets/img/RogerLeon/Geralt.gif)">
+                    <div class="venobox" href="assets/img/didacromero/Callbacks.gif" data-gall="portfolioGallery">
+                      <div class="container-portfolio" style="background-image: url(assets/img/didacromero/Callbacks.gif)">
                         <div class="overlay-portfolio">
-                          <div class="text-portfolio">Geralt</div>
+                          <div class="text-portfolio">Callbacks</div>
                         </div>
                       </div>
                     </div>
@@ -138,10 +201,10 @@
 
                 <div class="col-lg-4 col-md-6 special-grid drinks">
                   <div class="gallery-single fix">
-                    <div class="venobox" href="assets/img/RogerLeon/Geralt.gif" data-gall="portfolioGallery">
-                      <div class="container-portfolio" style="background-image: url(assets/img/RogerLeon/Geralt.gif)">
+                    <div class="venobox" href="assets/img/didacromero/Gamepads.gif" data-gall="portfolioGallery">
+                      <div class="container-portfolio" style="background-image: url(assets/img/didacromero/Gamepads.gif)">
                         <div class="overlay-portfolio">
-                          <div class="text-portfolio">Geralt</div>
+                          <div class="text-portfolio">Gamepads</div>
                         </div>
                       </div>
                     </div>
