@@ -723,88 +723,6 @@ section .container {
   transform: translate(-50%, -50%);
 }
 
-/* SLIDER */
-
-.container-slider{
-  padding-top: 25px;
-  width: 800px;
-  height:500px;
-  position:relative;
-  margin: auto;
-}
-
-slider {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #1f1f1f;
-  overflow: hidden;
-  position: absolute;
- }
- 
- slider > * {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #1f1f1f;
-  animation: slide 12s infinite;
-  overflow: hidden;
- }
- 
- slide:nth-child(1){
-  left: 0%;
-  animation-delay: -1s;
-  background-image: url(../img/portfolio/portfolio-1.jpg);
-  background-size: cover;
-  background-position: center;
- }
- 
- slide:nth-child(2){
-  animation-delay: 2s;
-  background-image: url(../img/portfolio/portfolio-2.jpg);
-  background-size: cover;
-  background-position: center;
- }
- 
- slide:nth-child(3){
-  animation-delay: 5s;
-  background-image: url(../img/portfolio/portfolio-3.jpg);
-  background-size: cover;
-  background-position: center;
- }
- 
- slide:nth-child(4){
-  left: 0%;
-  animation-delay: 8s;
-  background-image: url(../img/portfolio/portfolio-4.jpg);
-  background-size: cover;
-  background-position: center;
- }
- 
- slide p {
-  font-family: Comfortaa;
-  font-size: 70px;
-  text-align: center;
-  display: inline-block;
-  top: 50%;
-  width: 100%;
-  margin-top: 200px;
-  color: #fff;
- }
- 
- @keyframes slide {
-  0% { left: 100%; width: 100%; }
-  5% { left: 0%; }
-  25% { left: 0%; }
-  30% { left: -100%; width: 100%; }
-  30.0001% { left: -100%; width: 0%; }
-  100% { left: 100%; width: 0%; }
- }
-
-
-/* END SLIDER */
-
 /* Links */
 
 .container .links{
@@ -829,7 +747,6 @@ slider {
 }
 
 .btn{
-  
   position: relative;
   display: block;
   color: white;
@@ -837,7 +754,7 @@ slider {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   margin: 30px 0;
-  border: 2px solid #139650;
+  border: 2px solid #0bd86b;
   padding: 14px 60px;
   text-transform: uppercase;
   overflow:hidden;
@@ -871,7 +788,12 @@ slider {
 }
 
 .btn3:hover::before{
+  color: white;
   height: 400%;
+}
+
+.btn3:hover:after{
+  color: white;
 }
 
 
