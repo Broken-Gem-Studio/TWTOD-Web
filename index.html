@@ -56,12 +56,12 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#services-prod">Production</a></li>
-          <li><a href="#services">Game</a></li>
-          <li><a href="#portfolio-engine">Engine</a></li>
-          <li><a href="#portfolio">Team</a></li> 
-          <li><a download href="">Download</a></li>
-          <li><a href="#resume">Postmortem</a></li>
+          <li><a href="#services-prod" onclick="hide_video_teaser()">Production</a></li>
+          <li><a href="#services" onclick="show_video_teaser()">Game</a></li>
+          <li><a href="#portfolio-engine" onclick="hide_video_teaser()" >Engine</a></li>
+          <li><a href="#portfolio" onclick="hide_video_teaser()">Team</a></li> 
+          <li><a download href="" onclick="hide_video_teaser()">Download</a></li>
+          <li><a href="#resume" onclick="hide_video_teaser()">Postmortem</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -273,7 +273,7 @@
         </div>
 
         <div class="col-lg-6" style="z-index:0">
-          <iframe width="525" height="300"
+          <iframe id="video_teaser_game" width="525" height="300"
             src="https://www.youtube.com/embed/3elLSQatS-0" frameborder="0" allow="fullscreen">
           </iframe>
           <!--div class="owl-carousel portfolio-details-carousel" style="text-align: center;">

@@ -4,6 +4,18 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function show_video_teaser()
+{
+  document.getElementById("video_teaser_game").setAttribute("width",525);
+  document.getElementById("video_teaser_game").setAttribute("height",300);
+}
+function hide_video_teaser()
+{
+  document.getElementById("video_teaser_game").setAttribute("width",0);
+  document.getElementById("video_teaser_game").setAttribute("height",0);
+}
+
 !(function($) {
   "use strict";
 
