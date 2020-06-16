@@ -636,12 +636,12 @@ section .container {
   margin-bottom: 0;
 }
 
-.services .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.services-prod .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-.services .portfolio-details-carousel .owl-dot {
+.services-prod .portfolio-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -650,7 +650,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-.services .portfolio-details-carousel .owl-dot.active {
+.services-prod .portfolio-details-carousel .owl-dot.active {
   background-color: #18d26e !important;
 }
 
