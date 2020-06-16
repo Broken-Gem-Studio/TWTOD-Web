@@ -564,11 +564,10 @@ section .container {
   position: relative;
 }
 
-.resume .resume-item h4 {
+.resume .container h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #18d26e;
   margin-bottom: 10px;
@@ -605,6 +604,36 @@ section .container {
   top: 0;
   background: #18d26e;
   border: 2px solid #18d26e;
+}
+
+.resume .container p{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 0 0 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.resume .container .p2{
+  font-size: 16px;
+  font-weight: 400;
+  color: #18d26e;
+}
+
+.resume .container h1{
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.resume .container h3{
+  font-weight: 700;
+  font-size: 26px;
+  color: #18d26e;
 }
 
 /*--------------------------------------------------------------
@@ -1694,4 +1723,6 @@ height: 263px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
 
