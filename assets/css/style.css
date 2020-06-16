@@ -804,23 +804,22 @@ section .container {
 
 .container .links{
   padding-top: 20px;
-  position: relative; 
+  position: relative;
 }
 
-.middle 
-{
-  padding-top: -20px; 
+.middle {
   text-align: center;
 }
 
 .middle-teaser{
   padding-right: 10px;
   display: inline-block;
+  transform: translate(0%, 0%);
 }
 
 .middle-trailer{
   padding-left: 10px;
-  display: inline-block;
+  transform: translate(-50%, -50%);
 }
 
 .btn{
