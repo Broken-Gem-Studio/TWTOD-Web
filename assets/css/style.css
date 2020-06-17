@@ -683,6 +683,22 @@ section .container {
   background-color: #18d26e !important;
 }
 
+.services-prod .container h5{
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+/*.services-prod .container p{
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-weight: 400;
+  font-size: 16px;
+}*/
+
+
+
 /*--------------------------------------------------------------
 # Services / GAME
 --------------------------------------------------------------*/
@@ -1665,6 +1681,7 @@ height: 263px;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
+  opacity: 0.2;
 }
 
 .credits a:hover{
